@@ -1,0 +1,49 @@
+# 🔍 File Identifier
+
+Identify file types using **magic numbers (file signatures)** instead of file extensions.
+
+Works even if files have incorrect or fake extensions (e.g., `.pdf.exe`).
+
+---
+
+## 🚀 Installation
+
+```bash
+pip install file-identifier
+```
+
+---
+
+## 🛠 Usage
+
+```bash
+file-identifier <file_path>
+```
+
+### Example
+
+```bash
+file-identifier "C:\Users\YourName\Downloads\file.zip"
+```
+
+---
+
+## 📊 Output
+
+* File type
+* Likely extension
+* File size
+* Confidence level
+* Hex header
+
+---
+
+## 🧠 How it works
+
+Reads the first bytes of a file and matches them with known **magic signatures**.
+
+---
+
+## 📜 License
+
+MIT

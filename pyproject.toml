@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "file-identifier"
+version = "0.1.0"
+description = "File Type Identifier using Magic Numbers"
+readme = "README.md"
+requires-python = ">=3.8"
+
+authors = [
+  { name="Author", email="author@example.com" }
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+file-identifier = "file_identifier.cli:main"
