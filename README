@@ -20,7 +20,7 @@ pip install file-identifier
 file-identifier <file_path>
 ```
 
-Example:
+### Example
 
 ```bash
 file-identifier "C:\Users\YourName\Downloads\file.zip"
