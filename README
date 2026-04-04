@@ -1,12 +1,12 @@
 # 🔍 File Identifier
 
-Identify file types using **magic numbers (file signatures)** instead of file extensions.
+A fast CLI tool to detect file types using **magic numbers** — not extensions.
 
-Works even if files have incorrect or fake extensions (e.g., `.pdf.exe`).
+> Useful for identifying real file formats, even when extensions are missing or misleading (e.g., `.pdf.exe`).
 
 ---
 
-## 🚀 Installation
+## 🚀 Install
 
 ```bash
 pip install file-identifier
@@ -14,13 +14,13 @@ pip install file-identifier
 
 ---
 
-## 🛠 Usage
+## ⚡ Usage
 
 ```bash
 file-identifier <file_path>
 ```
 
-### Example
+Example:
 
 ```bash
 file-identifier "C:\Users\YourName\Downloads\file.zip"
@@ -28,19 +28,12 @@ file-identifier "C:\Users\YourName\Downloads\file.zip"
 
 ---
 
-## 📊 Output
+## 📦 Features
 
-* File type
-* Likely extension
-* File size
-* Confidence level
-* Hex header
-
----
-
-## 🧠 How it works
-
-Reads the first bytes of a file and matches them with known **magic signatures**.
+* Detects real file type from binary signatures
+* Works without relying on extensions
+* Supports images, documents, archives, media & executables
+* Fast and lightweight
 
 ---
 
