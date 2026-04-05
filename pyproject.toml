@@ -4,15 +4,16 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "file-identifier"
-version = "0.1.0"
-description = "File Type Identifier using Magic Numbers"
+version = "0.2.4"
+description = "CLI tool to detect real file types using magic numbers, with JSON output, directory scanning, and extension mismatch detection"
 readme = "README.md"
 requires-python = ">=3.8"
 
 authors = [
-  { name="Author", email="author@example.com" }
+  { name="Author", email="priyanshidwivedi0712@gmail.com" }
 ]
-
+[project.urls]
+Homepage = "https://github.com/priy07/file-identifier"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",

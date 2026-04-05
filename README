@@ -1,42 +1,83 @@
-# 🔍 File Identifier
+# File Identifier
 
-A fast CLI tool to detect file types using **magic numbers** — not extensions.
+Identify file types using **magic numbers (file signatures)** instead of file extensions.
 
-> Useful for identifying real file formats, even when extensions are missing or misleading (e.g., `.pdf.exe`).
+Works even if files have incorrect or fake extensions (e.g., `.pdf.exe`).
 
 ---
 
-## 🚀 Install
+## 🚀 Installation
 
-```bash
+```bash id="kgm8bt"
 pip install file-identifier
 ```
 
 ---
 
-## ⚡ Usage
+## 🛠 Usage
 
-```bash
-file-identifier <file_path>
-```
-
-### Example
-
-```bash
-file-identifier "C:\Users\YourName\Downloads\file.zip"
+```bash id="2r1fdn"
+file-identifier <file_or_directory> [options]
 ```
 
 ---
 
-## 📦 Features
+### Basic
 
-* Detects real file type from binary signatures
-* Works without relying on extensions
-* Supports images, documents, archives, media & executables
-* Fast and lightweight
+```bash id="t4w0k4"
+file-identifier file.pdf
+```
 
 ---
 
-## 📜 License
+### JSON Output
+
+```bash id="vdlm2b"
+file-identifier file.pdf --json
+```
+
+---
+
+### Detect Extension Mismatch
+
+```bash id="2j8lq8"
+file-identifier suspicious.pdf.exe
+```
+
+---
+
+### Directory Scan
+
+```bash id="7ng4pq"
+file-identifier ./folder
+```
+
+---
+
+### Verbose Mode
+
+```bash id="y9c0v2"
+file-identifier file.zip --verbose
+```
+
+---
+
+## 📊 Output
+
+* File type
+* Likely extension
+* File size
+* Confidence level
+* Hex header
+
+---
+
+## 🧠 How it works
+
+Reads the first bytes of a file and matches them with known **magic signatures**.
+
+---
+
+## License
 
 MIT
