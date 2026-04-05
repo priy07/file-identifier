@@ -1,68 +1,49 @@
 # File Identifier
 
-Identify file types using **magic numbers (file signatures)** instead of file extensions.
+A command-line tool to detect the real file type using magic numbers (file signatures), instead of relying on file extensions.
 
-Works even if files have incorrect or fake extensions (e.g., `.pdf.exe`).
+Works even when extensions are incorrect or intentionally misleading (e.g., `.pdf.exe`).
 
 ---
 
-## 🚀 Installation
+## Installation
 
-```bash id="kgm8bt"
+```bash
 pip install file-identifier
 ```
 
 ---
 
-## 🛠 Usage
+## Usage
 
-```bash id="2r1fdn"
+```bash
 file-identifier <file_or_directory> [options]
 ```
 
----
+### Examples
 
-### Basic
-
-```bash id="t4w0k4"
+```bash
 file-identifier file.pdf
-```
-
----
-
-### JSON Output
-
-```bash id="vdlm2b"
 file-identifier file.pdf --json
-```
-
----
-
-### Detect Extension Mismatch
-
-```bash id="2j8lq8"
 file-identifier suspicious.pdf.exe
-```
-
----
-
-### Directory Scan
-
-```bash id="7ng4pq"
 file-identifier ./folder
-```
-
----
-
-### Verbose Mode
-
-```bash id="y9c0v2"
 file-identifier file.zip --verbose
 ```
 
 ---
 
-## 📊 Output
+## Features
+
+* Detects file types using binary signatures (magic numbers)
+* Works with incorrect or spoofed extensions
+* JSON output for automation
+* Directory scanning support
+* Verbose mode for detailed inspection
+* Fast and lightweight
+
+---
+
+## Output
 
 * File type
 * Likely extension
@@ -72,9 +53,9 @@ file-identifier file.zip --verbose
 
 ---
 
-## 🧠 How it works
+## How it works
 
-Reads the first bytes of a file and matches them with known **magic signatures**.
+The tool reads the initial bytes of a file and compares them with known magic signatures to determine its actual type.
 
 ---
 
