@@ -10,3 +10,5 @@ dist/
 # Virtual env
 venv/
 .env/
+
+README
